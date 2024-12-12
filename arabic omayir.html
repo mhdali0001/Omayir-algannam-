@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+header h1 {
+    font-size: 5.625rem;
+
+}
+
+header h2 {
+    margin: 5px 0 20px;
+    font-size: 2.625rem;
+
+}
+
+
+section {
+    padding: 20px;
+}
+
+section h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 10px;
+}
+
+blockquote cite {
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #92beee;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+.headerr{
+    background-image: url("arom.png");
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5% 5% 5% 5%;
+
+}
+#headh1{
+    padding-right: 5%;
+}
+
+.headerr h2{
+    padding-right: 5%;
+}
+
+#about  h3{
+    font-size: 4.625rem;
+  margin: 30px auto 3% auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#about  p{
+    font-family: cursive;
+
+}
+#services  h3{
+    font-size: 5.625rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#mycontent img{
+    height: 70%;
+}
+#mycontent h3{
+    font-size: 5.625rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact h2{
+    font-size: 5.625rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact label{
+    font-family: cursive;
+
+}
+#mycontent p{
+    font-family: cursive;
+
+}
+#mycontent h5{
+    font-family: cursive;
+
+}
+.headerr nav {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin-left: 10%;
+
+}
+
+.headerr nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: #fff;
+    background-origin: padding-box;
+
+}
+
+.headerr nav ul li {
+    margin-left: 20px;
+    font-family:cursive;
+}
+
+.headerr nav ul li:last-child {
+    margin-right: 0;
+}
+
+.headerr nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.headerr nav ul li a:hover {
+    color: #ccc;
+}
+.menu-toggle {
+            display: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .headerr nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #343a40;
+                padding: 0;
+            }
+
+            .headerr nav ul.active {
+                display: flex;
+            }
+
+            .headerr nav ul li {
+                margin: 10px 0;
+            }
+
+            .headerr nav ul li a {
+                font-size: 14px;
+                padding: 10px;
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+
+.education-section {
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.education-content {
+    color: #fff;
+    padding: 30px;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family:cursive;
+    
+}
+
+.education-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family:cursive;
+
+}
+
+.profile-picture {
+    margin: 10%;
+}
+
+.profile-picture img {
+    max-width: 100%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+    }
+    .section-heading {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .form-control {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 1rem;
+    }
+    .btn-xl {
+        font-size: 1.25rem;
+        padding: 15px 30px;
+    }
+    </style>
+
+    <!--- font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <!--- movment-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+        <!--- movment-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <!--- movment end-->
+
+    <header id="#home"class="bg-dark text-light text-right py-7 headerr">
+        <nav >
+            <div class="menu-toggle">☰</div>
+
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">نبذة عني</a></li>
+                <li><a href="#mycontent">محتواي</a></li>
+                <li><a href="#education">تعليمي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+            <ul class="text-left">
+                <li><a href="omayir.html"> English</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <h1 id="headh1" >مرحبا</h1>
+        <h1 >أنا عمير</h1>
+        <h1 >الغنام   </h1>
+        <h2 >صانع محتوى</h2>
+    </header>
+
+
+    <div class="container text-right py-5">
+        <section id="about" class="mb-5" data-aos="fade-up">
+            <h3>نبذة عني:</h3>
+            <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">🎥إنشاء المحتوى: أقدم محتوى متخصصًا من خلال تبسيط العلوم، من خلال محتوى جذاب وسهل الوصول إليه، وغالبًا ما يتم تقديمه في مقاطع فيديو ومقالات. أهدف إلى جعل المفاهيم العلمية المعقدة مفهومة ومباشرة للجميع.</p>
+            <br><p class="lead" data-aos="fade-left">🌟 المهمة: مهمتي هي إيصال المعلومات لكم بطريقتي الخاصة وتبسيطها قدر الإمكان، وتقديم كافة المعلومات بشكل جميل ومحبب لجميع الفئات الاجتماعية.</p>
+            <br><p class="lead"data-aos="fade-right"> 📚 الخبرة: أعمل كمستشار تعليمي في الجامعات التركية، حيث أساعد الطلاب في الالتحاق بالجامعات التركية الخاصة والحكومية، بالإضافة إلى الحصول على منح دراسية حول العالم. أقدم الاستشارات بناءً على خبرة تزيد عن 8 سنوات في مجال الجامعات والخدمات الجامعية.</p>
+            <br><p class="lead" data-aos="fade-left" >🌍 المحتوى: سواء كنت طالبًا أو باحثًا أو متحمسًا للمعرفة، فإن المحتوى الخاص بي يحتوي على ما يناسب الجميع، بدءًا من مقاطع الفيديو التعليمية والتثقيفية وحتى استكشاف عالم العلوم بطريقة مثيرة ومبتكرة.</p>
+                
+        </section>
+
+
+        
+        <section id="mycontent" class="mb-4">
+            <h3 data-aos="fade-down">محتواي:</h3>
+            <p class="lead" data-aos="fade-right" data-aos-delay="200">
+                🧉مع كاسة متة هو برنامج YouTube  يبسط العلم في أسلوبي الفريد. تبدأ كل حلقة بمشهد مسرحي يشرح محتوى الحلقة بطريقة ممتعة ومسلية. تظل بعض الشخصيات متسقة في العديد من الحلقات ، في حين أن البعض الآخر يتغير اعتمادًا على موضوع أو موضوع كل حلقة.</p>
+        
+            <div class="card-group">
+                <div class="card" data-aos="flip-left" data-aos-delay="400">
+                    <img src="cn1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">المدير</h5>
+                        <p class="card-text">يمثل شخصية المدير الكريم</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-up" data-aos-delay="600">
+                    <img src="cn2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">أبو زغلول</h5>
+                        <p class="card-text">أبو زغلول هي شخصية تتنكر وترفض كل شيء. إنه شخصية كوميدية تظهر عندما يكون هناك اعتراض أو رفض لشيء ما.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-right" data-aos-delay="800">
+                    <img src="cn3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">مضطرب</h5>
+                        <p class="card-text">لديه اضطرابات نفسية ورقة اجتماعية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="education" class="education-section" style="background-image: url('un1.jpeg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="profile-picture" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="un3.jpeg" alt="Your Picture">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="education-content" data-aos="fade-left" data-aos-duration="1000">
+                            <h2 style="font-family:cursive;" data-aos="fade-down" data-aos-duration="1000">التعليم:</h2>
+                            <div class="education-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                <h3>بكالوريوس في هندسة الكمبيوتر</h3>
+                                <p>جامعة نيشانانتاشي ، اسطنبول</p>
+                                <p>2019 - الآن</p>
+                                <p>يغطي منهجنا العديد من الموضوعات مثل البرمجة وتصميم النظام وتحليل البيانات والذكاء الاصطناعي. نتعلم تطوير البرمجيات والنظام ، بما في ذلك إنشاء تطبيقات الويب والجوال ، والشبكات ، والتعامل مع البيانات الضخمة باستخدام الخوارزميات الحديثة. يعدنا التخصص لأدوار مثل مطوري البرمجيات أو محللي البيانات أو مهندسي الشبكات أو باحثو الذكاء الاصطناعي. تمزج الدورة النظرية مع المهارات العملية للتفوق في صناعة التكنولوجيا.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading" data-aos="fade-down">تواصل معي:</h2>
+                        <hr class="my-4" data-aos="fade-down" data-aos-delay="200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto" data-aos="fade-up" data-aos-delay="400">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="name">الاسم:</label>
+                                    <input class="form-control" id="name" type="text" placeholder="الاسم" required="required" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="email"> عنوانك البريدي:</label>
+                                    <input class="form-control" id="email" type="email" placeholder="ايميلك" required="required" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="message">الموضوع:</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="تكلم عن موضوعك" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark btn-xl" id="sendMessageButton">أرسل</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="footer bg-dark  text-white">
+        <div class="container">
+                <div class="col-lg-12 text-center">
+                    <p>جميع الحقوق محفوظة &copy; 2024 Arab Web Security. </p>
+                </div>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>

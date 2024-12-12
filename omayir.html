@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+header h1 {
+    font-size: 5.625rem;
+
+}
+
+header h2 {
+    margin: 5px 0 20px;
+    font-size: 2.625rem;
+
+}
+
+
+section {
+    padding: 20px;
+}
+
+section h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 10px;
+}
+
+blockquote cite {
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #92beee;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+.headerr{
+    background-image: url("om7.png");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5% 5% 5% 10%;
+
+}
+
+.headerr h2{
+    padding-left: 5%;
+}
+
+#about  h3{
+    font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+#about  p{
+    font-family: cursive;
+
+}
+#services  h3{
+    font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+}
+
+#mycontent img{
+    height: 70%;
+}
+#mycontent h3{
+    font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+}
+#contact h2{
+    font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+}
+#contact label{
+    font-family: cursive;
+
+}
+#mycontent p{
+    font-family: cursive;
+
+}
+#mycontent h5{
+    font-family: cursive;
+
+}
+.headerr nav {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin-left: 5%;
+
+}
+
+.headerr nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: #fff;
+    background-origin: padding-box;
+
+}
+
+.headerr nav ul li {
+    margin-right: 20px;
+    font-family:cursive;
+}
+
+.headerr nav ul li:last-child {
+    margin-right: 0;
+}
+
+.headerr nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.headerr nav ul li a:hover {
+    color: #ccc;
+}
+.menu-toggle {
+            display: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .headerr nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #343a40;
+                padding: 0;
+            }
+
+            .headerr nav ul.active {
+                display: flex;
+            }
+
+            .headerr nav ul li {
+                margin: 10px 0;
+            }
+
+            .headerr nav ul li a {
+                font-size: 14px;
+                padding: 10px;
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+.education-section {
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.education-content {
+    color: #fff;
+    padding: 30px;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family:cursive;
+    
+}
+
+.education-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family:cursive;
+
+}
+
+.profile-picture {
+    margin: 10%;
+}
+
+.profile-picture img {
+    max-width: 100%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+    }
+    .section-heading {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .form-control {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 1rem;
+    }
+    .btn-xl {
+        font-size: 1.25rem;
+        padding: 15px 30px;
+    }
+    </style>
+
+    <!--- font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <!--- movment-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+        <!--- movment-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <!--- movment end-->
+ 
+    
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.headerr nav ul').classList.toggle('active');
+            });
+        </script>
+    <header id="#home"class="bg-dark text-light text-left py-7 headerr">
+        <nav >
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#mycontent">My content</a></li>
+                <li><a href="#education">Eductaion</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="arabic omayir.html">عربي</a></li>
+            </ul>
+        </nav>
+        </nav>
+        <br><br>
+        <h1 >Hi</h1>
+        <h1 >I'm Omayir</h1>
+        <h1 id="Alghannam"> Alghannam</h1>
+        <h2 >Content Creator</h2>
+    </header>
+
+
+    <div class="container py-5">
+        <section id="about" class="mb-5" data-aos="fade-up">
+            <h3>About Me</h3>
+            <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">🎥 Content Creation: I provide specialized content by simplifying science, through engaging and accessible content, often presented in videos and articles. I aim to make complex scientific concepts understandable and straightforward for everyone.
+            </p>
+            <br><p class="lead" data-aos="fade-left">🌟 Mission: My mission is to deliver information to you in my own way and simplify it as much as possible, presenting all information in a beautiful and beloved manner to all social groups.</p>
+            <br><p class="lead"data-aos="fade-right"> 📚 Experience: I work as an educational consultant in Turkish universities, assisting students in enrolling in both private and government Turkish universities, as well as accessing scholarships around the world. I provide consultations based on over 8 years of experience in the field of universities and university services.            </p>
+            <br><p class="lead" data-aos="fade-left" >🌍 Content: Whether you're a student, researcher, or knowledge enthusiast, my content has something for everyone, from educational and informative videos to exploring the world of science in an exciting and novel way.</p>
+                
+        </section>
+
+
+        
+        <section id="mycontent" class="mb-4">
+            <h3 data-aos="fade-down">My content</h3>
+            <p class="lead" data-aos="fade-right" data-aos-delay="200">
+                🧉 WITH KASET MATTE is a youtube program that simplifies science in my unique style. Each episode starts with a theatrical scene that explains the content of the episode in a fun and entertaining way. Some characters remain consistent throughout many episodes, while others change depending on the theme or topic of each episode.
+            </p>
+        
+            <div class="card-group">
+                <div class="card" data-aos="flip-left" data-aos-delay="400">
+                    <img src="cn1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Big Boss</h5>
+                        <p class="card-text">The understanding and dignified manager personality</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-up" data-aos-delay="600">
+                    <img src="cn2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Abu zaglul</h5>
+                        <p class="card-text">Abu Zaghlool is a character who disguises and rejects everything. He is a comedic character that appears when there's objection or refusal to something.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-right" data-aos-delay="800">
+                    <img src="cn3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Troubled</h5>
+                        <p class="card-text">He has psychological disorders and social phobia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="education" class="education-section" style="background-image: url('un1.jpeg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="profile-picture" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="un3.jpeg" alt="Your Picture">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="education-content" data-aos="fade-left" data-aos-duration="1000">
+                            <h2 style="font-family:cursive;" data-aos="fade-down" data-aos-duration="1000">Education</h2>
+                            <div class="education-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                <h3>Bachelor of Science in Computer Engineering</h3>
+                                <p>Nisantasi University, Istanbul</p>
+                                <p>2019 - Now</p>
+                                <p>Our curriculum covers various topics like programming, system design, data analysis, and artificial intelligence. We learn software and system development, including web and mobile app creation, networking, and dealing with big data using modern algorithms. The specialization prepares us for roles like software developers, data analysts, network engineers, or AI researchers. The course blends theory with practical skills to excel in the tech industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading" data-aos="fade-down">Contact me</h2>
+                        <hr class="my-4" data-aos="fade-down" data-aos-delay="200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto" data-aos="fade-up" data-aos-delay="400">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="name">Name:</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="email">Email Address:</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark btn-xl" id="sendMessageButton">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer class="footer bg-dark  text-white">
+        <div class="container">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; 2024 Arab Web Security. All rights reserved.</p>
+                </div>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>
